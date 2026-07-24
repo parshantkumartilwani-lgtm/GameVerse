@@ -1,0 +1,179 @@
+/* rdr2-style.css — Red Dead Redemption 2 Theme */
+
+/* Root color variables inspired by RDR2 */
+:root {
+  --rdr2-red: #8b0000;           /* Blood and honor */
+  --rdr2-gold: #d2b48c;          /* Dusty plains and bounty posters */
+  --rdr2-coal: #2c2c2c;          /* Campfire shadows */
+  --rdr2-sand: #f5f5dc;          /* Canvas tents and maps */
+  --rdr2-wood: #4e342e;          /* Saddle leather and saloons */
+  --rdr2-smoke: #999999;         /* Gunpowder and dusk */
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--rdr2-coal);
+  color: var(--rdr2-sand);
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, var(--rdr2-wood), var(--rdr2-red));
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid var(--rdr2-smoke);
+  box-shadow: 0 0 15px rgba(139, 0, 0, 0.4);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--rdr2-sand);
+  text-shadow: 1px 1px 3px var(--rdr2-wood);
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: var(--rdr2-gold);
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--rdr2-red);
+}
+
+/* Sections */
+section.tab {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #3a3a3a;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--rdr2-smoke);
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: var(--rdr2-red);
+  margin-bottom: 1rem;
+}
+
+section h3 {
+  margin-top: 1.5rem;
+  color: var(--rdr2-gold);
+}
+
+/* Game Image */
+.game-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px rgba(78, 52, 46, 0.4);
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 0.5rem 0;
+  color: var(--rdr2-sand);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #3a3a3a;
+  color: var(--rdr2-sand);
+}
+
+caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--rdr2-gold);
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid var(--rdr2-smoke);
+}
+
+th {
+  background-color: #4a4a4a;
+  color: var(--rdr2-gold);
+}
+
+/* Download Button */
+.download-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--rdr2-gold);
+  color: var(--rdr2-coal);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: var(--rdr2-red);
+  color: var(--rdr2-sand);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--rdr2-smoke);
+  color: var(--rdr2-smoke);
+}
+
+footer a {
+  color: var(--rdr2-gold);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  section.tab {
+    padding: 1rem;
+  }
+}

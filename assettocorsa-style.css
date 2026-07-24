@@ -1,0 +1,182 @@
+/* assettocorsa-style.css — Assetto Corsa Theme */
+
+:root {
+  --ac-red: #e53935;
+  --ac-gray: #2c2c2c;
+  --ac-black: #0a0a0a;
+  --ac-white: #f2f2f2;
+  --ac-blue: #1e88e5;
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--ac-black);
+  color: var(--ac-white);
+  line-height: 1.6;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, var(--ac-red), var(--ac-blue));
+  padding: 1.5rem 1rem;
+  box-shadow: 0 0 15px rgba(229, 57, 53, 0.4);
+  border-bottom: 2px solid var(--ac-red);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--ac-white);
+  text-shadow: 1px 1px 3px var(--ac-blue);
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: var(--ac-white);
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--ac-red);
+}
+
+/* Sections */
+section.tab {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: var(--ac-gray);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--ac-blue);
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: var(--ac-red);
+  margin-bottom: 1rem;
+}
+
+section h3 {
+  margin-top: 1.5rem;
+  color: var(--ac-blue);
+}
+
+/* Game Image */
+.game-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px rgba(30, 136, 229, 0.3);
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 0.5rem 0;
+  color: var(--ac-white);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: var(--ac-gray);
+  color: var(--ac-white);
+}
+
+caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--ac-red);
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid var(--ac-blue);
+}
+
+th {
+  background-color: #3a3a3a;
+  color: var(--ac-blue);
+}
+
+/* Download Button */
+.download-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--ac-red);
+  color: var(--ac-white);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px rgba(229, 57, 53, 0.4);
+}
+
+.download-btn:hover {
+  background-color: var(--ac-blue);
+  color: var(--ac-white);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--ac-red);
+  color: var(--ac-red);
+}
+
+footer a {
+  color: var(--ac-blue);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  section.tab {
+    padding: 1rem;
+  }
+
+  .game-img {
+    height: auto;
+  }
+}

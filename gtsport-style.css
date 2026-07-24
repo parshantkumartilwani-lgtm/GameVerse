@@ -1,0 +1,182 @@
+/* gtsport-style.css — GT Sport Theme */
+
+:root {
+  --gt-red: #c62828;
+  --gt-blue: #1565c0;
+  --gt-gray: #2c2c2c;
+  --gt-black: #0a0a0a;
+  --gt-white: #f2f2f2;
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--gt-black);
+  color: var(--gt-white);
+  line-height: 1.6;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, var(--gt-red), var(--gt-blue));
+  padding: 1.5rem 1rem;
+  box-shadow: 0 0 15px rgba(21, 101, 192, 0.3);
+  border-bottom: 2px solid var(--gt-red);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--gt-white);
+  text-shadow: 1px 1px 3px var(--gt-blue);
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: var(--gt-white);
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--gt-red);
+}
+
+/* Sections */
+section.tab {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: var(--gt-gray);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--gt-blue);
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: var(--gt-red);
+  margin-bottom: 1rem;
+}
+
+section h3 {
+  margin-top: 1.5rem;
+  color: var(--gt-blue);
+}
+
+/* Game Image */
+.game-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px rgba(21, 101, 192, 0.3);
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 0.5rem 0;
+  color: var(--gt-white);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: var(--gt-gray);
+  color: var(--gt-white);
+}
+
+caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--gt-red);
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid var(--gt-blue);
+}
+
+th {
+  background-color: #3a3a3a;
+  color: var(--gt-blue);
+}
+
+/* Download Button */
+.download-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--gt-red);
+  color: var(--gt-white);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px rgba(198, 40, 40, 0.4);
+}
+
+.download-btn:hover {
+  background-color: var(--gt-blue);
+  color: var(--gt-white);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--gt-red);
+  color: var(--gt-red);
+}
+
+footer a {
+  color: var(--gt-blue);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  section.tab {
+    padding: 1rem;
+  }
+
+  .game-img {
+    height: auto;
+  }
+}

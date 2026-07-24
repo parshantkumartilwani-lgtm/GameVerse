@@ -1,0 +1,163 @@
+/* racing-style.css — Racing Games Theme */
+
+:root {
+  --track-red: #d32f2f;
+  --track-blue: #1976d2;
+  --track-gray: #2c2c2c;
+  --light-white: #f2f2f2;
+  --dark-black: #0a0a0a;
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--dark-black);
+  color: var(--light-white);
+  line-height: 1.6;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, var(--track-red), var(--track-blue));
+  padding: 1.5rem 1rem;
+  box-shadow: 0 0 15px rgba(211, 47, 47, 0.3);
+  border-bottom: 2px solid var(--track-blue);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--light-white);
+  text-shadow: 1px 1px 3px var(--track-red);
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #bbdefb;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 1em;
+  color: var(--track-blue);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Section */
+section {
+  margin: 60px auto;
+  width: 85%;
+}
+
+h2 {
+  color: var(--track-red);
+  margin-bottom: 30px;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Game Grid */
+.game-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.game-card {
+  background: var(--track-gray);
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
+  max-width: 220px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+}
+
+.game-card img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(25, 118, 210, 0.3);
+}
+
+.game-card p {
+  margin-top: 10px;
+  font-size: 1em;
+  color: var(--light-white);
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  margin-top: 60px;
+  background: var(--track-gray);
+  padding: 20px;
+  border-top: 2px solid var(--track-red);
+  font-size: 0.95em;
+  color: var(--light-white);
+}
+
+footer a {
+  color: var(--track-blue);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--track-red);
+}
+
+/* Social Media */
+.social-media {
+  margin-top: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .game-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .game-card {
+    width: 90%;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}

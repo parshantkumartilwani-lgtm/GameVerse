@@ -1,0 +1,185 @@
+/* forza5-style.css — Forza Horizon 5 Theme */
+
+:root {
+  --forza-yellow: #fdd835;
+  --forza-blue: #0288d1;
+  --forza-gray: #2c2c2c;
+  --light-white: #f2f2f2;
+  --dark-black: #0a0a0a;
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--dark-black);
+  color: var(--light-white);
+  line-height: 1.6;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, var(--forza-yellow), var(--forza-blue));
+  padding: 1.5rem 1rem;
+  box-shadow: 0 0 15px rgba(2, 136, 209, 0.3);
+  border-bottom: 2px solid var(--forza-yellow);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--light-white);
+  text-shadow: 1px 1px 3px var(--forza-blue);
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: var(--light-white);
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--forza-yellow);
+}
+
+/* Sections */
+section.tab {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: var(--forza-gray);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--forza-blue);
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: var(--forza-yellow);
+  margin-bottom: 1rem;
+}
+
+section h3 {
+  margin-top: 1.5rem;
+  color: var(--forza-blue);
+}
+
+/* Game Image */
+.game-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px rgba(2, 136, 209, 0.3);
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 0.5rem 0;
+  color: var(--light-white);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: var(--forza-gray);
+  color: var(--light-white);
+}
+
+caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--forza-yellow);
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid var(--forza-blue);
+}
+
+th {
+  background-color: #3a3a3a;
+  color: var(--forza-blue);
+}
+
+/* Download Button */
+.download-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--forza-yellow);
+  color: var(--dark-black);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px rgba(253, 216, 53, 0.4);
+}
+
+.download-btn:hover {
+  background-color: var(--forza-blue);
+  color: var(--light-white);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--forza-yellow);
+  color: var(--forza-yellow);
+}
+
+footer a {
+  color: var(--forza-blue);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  section.tab {
+    padding: 1rem;
+  }
+
+  .game-img {
+    height: auto;
+  }
+}  /* ✅ Closing brace added */
+
+  section.tab {
+  padding: 1rem;
+}

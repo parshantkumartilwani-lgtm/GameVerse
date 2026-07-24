@@ -1,0 +1,179 @@
+/* hogwarts-style.css — Hogwarts Legacy Theme */
+
+/* Root color variables inspired by Hogwarts Legacy */
+:root {
+  --magic-gold: #d4af37;           /* Ancient magic and relics */
+  --scroll-parchment: #f5f5dc;     /* Spellbooks and maps */
+  --midnight-blue: #1c1c3c;        /* Enchanted night sky */
+  --wand-brown: #4e342e;           /* Wand wood and robes */
+  --fog-gray: #888888;             /* Mystical mist and ruins */
+  --spell-purple: #6a0dad;         /* Arcane energy */
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--midnight-blue);
+  color: var(--scroll-parchment);
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, var(--wand-brown), var(--spell-purple));
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid var(--fog-gray);
+  box-shadow: 0 0 15px rgba(106, 13, 173, 0.4);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--scroll-parchment);
+  text-shadow: 1px 1px 3px var(--wand-brown);
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: var(--magic-gold);
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--spell-purple);
+}
+
+/* Sections */
+section.tab {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #2a2a4a;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--fog-gray);
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: var(--magic-gold);
+  margin-bottom: 1rem;
+}
+
+section h3 {
+  margin-top: 1.5rem;
+  color: var(--spell-purple);
+}
+
+/* Game Image */
+.game-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 0.5rem 0;
+  color: var(--scroll-parchment);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #2a2a4a;
+  color: var(--scroll-parchment);
+}
+
+caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--magic-gold);
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid var(--fog-gray);
+}
+
+th {
+  background-color: #3a3a5a;
+  color: var(--magic-gold);
+}
+
+/* Download Button */
+.download-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--magic-gold);
+  color: var(--midnight-blue);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: var(--spell-purple);
+  color: var(--scroll-parchment);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--fog-gray);
+  color: var(--fog-gray);
+}
+
+footer a {
+  color: var(--magic-gold);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  section.tab {
+    padding: 1rem;
+  }
+}

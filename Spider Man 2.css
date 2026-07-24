@@ -1,0 +1,180 @@
+/* spiderman-style.css — Marvel's Spider-Man Theme */
+
+/* Root color variables inspired by Spider-Man */
+:root {
+  --spidey-red: #e50914;         /* Heroic red suit */
+  --spidey-blue: #1e3a8a;        /* Classic blue suit */
+  --web-silver: #d1d5db;         /* Webbing and tech */
+  --night-black: #0a0a0a;        /* City shadows */
+  --alert-yellow: #facc15;       /* Spider-sense glow */
+  --text-white: #f9fafb;         /* UI clarity */
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--night-black);
+  color: var(--text-white);
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, var(--spidey-red), var(--spidey-blue));
+  padding: 1.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.5);
+  border-bottom: 2px solid var(--web-silver);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--text-white);
+  text-shadow: 0 0 5px var(--spidey-blue);
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: var(--web-silver);
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--alert-yellow);
+}
+
+/* Sections */
+section.tab {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 9, 20, 0.1);
+  border: 1px solid var(--web-silver);
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: var(--spidey-red);
+  margin-bottom: 1rem;
+}
+
+section h3 {
+  margin-top: 1.5rem;
+  color: var(--alert-yellow);
+}
+
+/* Game Image */
+.game-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px rgba(30, 58, 138, 0.4);
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 0.5rem 0;
+  color: var(--text-white);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #1c1c1c;
+  color: var(--text-white);
+}
+
+caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--alert-yellow);
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid var(--web-silver);
+}
+
+th {
+  background-color: #2a2a2a;
+  color: var(--spidey-blue);
+}
+
+/* Download Button */
+.download-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--spidey-red);
+  color: var(--text-white);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px rgba(229, 9, 20, 0.4);
+}
+
+.download-btn:hover {
+  background-color: var(--spidey-blue);
+  color: var(--alert-yellow);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--web-silver);
+  color: var(--web-silver);
+}
+
+footer a {
+  color: var(--spidey-blue);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  section.tab {
+    padding: 1rem;
+  }
+}

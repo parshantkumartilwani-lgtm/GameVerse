@@ -1,0 +1,184 @@
+/* cyberpunk-style.css — Cyberpunk 2077 Theme */
+
+/* Root color palette inspired by Cyberpunk 2077 */
+:root {
+  --neon-yellow: #fcee09;
+  --neon-cyan: #00fff7;
+  --dark-tech: #0f0f0f;
+  --glitch-pink: #ff0055;
+  --gray-metal: #2e2e2e;
+  --white-light: #f2f2f2;
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--dark-tech);
+  color: var(--white-light);
+  line-height: 1.6;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, var(--neon-yellow), var(--glitch-pink));
+  padding: 1.5rem 1rem;
+  box-shadow: 0 0 15px rgba(255, 0, 85, 0.3);
+  border-bottom: 2px solid var(--neon-cyan);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--dark-tech);
+  text-shadow: 1px 1px 3px var(--neon-cyan);
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: var(--neon-cyan);
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--glitch-pink);
+}
+
+/* Sections */
+section.tab {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: var(--gray-metal);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--neon-cyan);
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: var(--neon-yellow);
+  margin-bottom: 1rem;
+}
+
+section h3 {
+  margin-top: 1.5rem;
+  color: var(--glitch-pink);
+}
+
+/* Game Image */
+.game-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px rgba(252, 238, 9, 0.3);
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 0.5rem 0;
+  color: var(--white-light);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: var(--gray-metal);
+  color: var(--white-light);
+}
+
+caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--neon-yellow);
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid var(--neon-cyan);
+}
+
+th {
+  background-color: #3a3a3a;
+  color: var(--glitch-pink);
+}
+
+/* Download Button */
+.download-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--neon-cyan);
+  color: var(--dark-tech);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 247, 0.4);
+}
+
+.download-btn:hover {
+  background-color: var(--glitch-pink);
+  color: var(--white-light);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--neon-cyan);
+  color: var(--neon-cyan);
+}
+
+footer a {
+  color: var(--neon-yellow);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  section.tab {
+    padding: 1rem;
+  }
+
+  .game-img {
+    height: auto;
+  }
+}

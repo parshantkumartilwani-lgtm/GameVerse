@@ -1,0 +1,180 @@
+/* alanwake2-style.css — Alan Wake II Theme */
+
+/* Root color variables inspired by Alan Wake II */
+:root {
+  --night-black: #0a0a0a;         /* Darkness and dread */
+  --fog-gray: #444444;            /* Mist and mystery */
+  --flashlight-white: #f2f2f2;    /* Light in the dark */
+  --blood-red: #8b0000;           /* Horror and violence */
+  --ink-blue: #1e3a5f;            /* Noir atmosphere */
+  --echo-silver: #cccccc;         /* Echoes and memories */
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--night-black);
+  color: var(--flashlight-white);
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, var(--ink-blue), var(--fog-gray));
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid var(--echo-silver);
+  box-shadow: 0 0 15px rgba(30, 58, 95, 0.4);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--flashlight-white);
+  text-shadow: 1px 1px 3px var(--ink-blue);
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: var(--echo-silver);
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--blood-red);
+}
+
+/* Sections */
+section.tab {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--fog-gray);
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: var(--blood-red);
+  margin-bottom: 1rem;
+}
+
+section h3 {
+  margin-top: 1.5rem;
+  color: var(--echo-silver);
+}
+
+/* Game Image */
+.game-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px rgba(139, 0, 0, 0.3);
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 0.5rem 0;
+  color: var(--flashlight-white);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #1c1c1c;
+  color: var(--flashlight-white);
+}
+
+caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--echo-silver);
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid var(--fog-gray);
+}
+
+th {
+  background-color: #2a2a2a;
+  color: var(--ink-blue);
+}
+
+/* Download Button */
+.download-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--ink-blue);
+  color: var(--flashlight-white);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px rgba(30, 58, 95, 0.4);
+}
+
+.download-btn:hover {
+  background-color: var(--blood-red);
+  color: var(--flashlight-white);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--fog-gray);
+  color: var(--fog-gray);
+}
+
+footer a {
+  color: var(--echo-silver);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  section.tab {
+    padding: 1rem;
+  }
+}

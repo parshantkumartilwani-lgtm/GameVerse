@@ -1,0 +1,179 @@
+/* uncharted-style.css — Uncharted Theme */
+
+/* Root color variables inspired by Uncharted */
+:root {
+  --adventure-gold: #d2b48c;      /* Treasure maps and parchment */
+  --deep-brown: #4e342e;          /* Leather journals and ruins */
+  --stone-gray: #888888;          /* Ancient relics and cliffs */
+  --sand-cream: #f5f5dc;          /* Dusty trails and scrolls */
+  --shadow-black: #1a1a1a;        /* Jungle shadows and caves */
+  --accent-red: #a52a2a;          /* Danger and action */
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--shadow-black);
+  color: var(--sand-cream);
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, var(--deep-brown), var(--accent-red));
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid var(--stone-gray);
+  box-shadow: 0 0 15px rgba(78, 52, 46, 0.4);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--sand-cream);
+  text-shadow: 1px 1px 3px var(--deep-brown);
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: var(--adventure-gold);
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--accent-red);
+}
+
+/* Sections */
+section.tab {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--stone-gray);
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: var(--accent-red);
+  margin-bottom: 1rem;
+}
+
+section h3 {
+  margin-top: 1.5rem;
+  color: var(--adventure-gold);
+}
+
+/* Game Image */
+.game-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px rgba(78, 52, 46, 0.3);
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 0.5rem 0;
+  color: var(--sand-cream);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #2a2a2a;
+  color: var(--sand-cream);
+}
+
+caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--adventure-gold);
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid var(--stone-gray);
+}
+
+th {
+  background-color: #3a3a3a;
+  color: var(--adventure-gold);
+}
+
+/* Download Button */
+.download-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--adventure-gold);
+  color: var(--shadow-black);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: var(--accent-red);
+  color: var(--sand-cream);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--stone-gray);
+  color: var(--stone-gray);
+}
+
+footer a {
+  color: var(--adventure-gold);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  section.tab {
+    padding: 1rem;
+  }
+}

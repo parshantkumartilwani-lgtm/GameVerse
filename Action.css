@@ -1,0 +1,139 @@
+/* Base Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0b0b0b;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #d32f2f, #c2185b);
+  padding: 20px 10px;
+  box-shadow: 0 0 15px #000;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #fff;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #ffcdd2;
+}
+
+header a {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 1em;
+}
+
+/* Section */
+section {
+  margin: 60px auto;
+  width: 85%;
+}
+
+h2 {
+  color: #ff5252;
+  margin-bottom: 30px;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Game Grid */
+.game-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.game-card {
+  background: #151515;
+  border-radius: 15px;
+  padding: 20px;
+  width: 220px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+}
+
+.game-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 82, 82, 0.3);
+}
+
+.game-card p {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #ddd;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  margin-top: 60px;
+  background: #111;
+  padding: 20px;
+  border-top: 2px solid #ff5252;
+  font-size: 0.95em;
+}
+
+footer a {
+  color: #ff8a80;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ff5252;
+}
+
+/* Social Media */
+.social-media {
+  margin-top: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .game-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .game-card {
+    width: 90%;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
