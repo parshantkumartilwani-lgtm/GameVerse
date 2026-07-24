@@ -17,7 +17,6 @@ The goal of GameVerse is to make game discovery simple, fast, and reliable. It p
 
 * HTML5
 * CSS3
-* JavaScript
 
 ## Project Goal
 
